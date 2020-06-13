@@ -1,17 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Card from './Cards';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Sdata from './Sdata';
+
+
+// function ncard(val){
+//   return(
+//     <Card 
+//       imgsrc={val.imgscr}
+//       title={val.title}
+//       sname={val.sname}
+//       link={val.links}
+//     />
+//   );
+// }
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <h1 className="heading_style">List of top 5 Netflix Series in 2020</h1>
+    {Sdata.map((val) =>{
+      return(
+        <Card 
+          imgsrc={val.imgscr}
+          title={val.title}
+          sname={val.sname}
+          link={val.links}
+        />
+      );
+    })}
+  </>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
