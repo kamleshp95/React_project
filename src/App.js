@@ -1,6 +1,21 @@
 import React from 'react';
 import Card from './Cards';
 import Sdata from './Sdata';
+import Netflix from './Netflix';
+import Amazon from './Amazon';
+
+
+
+// const faveSeries = "amazon"
+
+// const FavS = () =>{
+//   if (faveSeries === "netflix"){
+//     return <Netflix />;
+//   } else{
+//     return <Amazon />;
+//   }
+// };
+
 
 const App = () => (
   <>
@@ -16,6 +31,9 @@ const App = () => (
         />
       );
     })}
+
+    {/* <FavS /> */}
+    {/* {faveSeries === "netflix" ? <Netflix /> : <Amazon />} */}
   </>
 );
 

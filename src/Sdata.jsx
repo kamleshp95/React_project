@@ -24,7 +24,7 @@ const Sdata =[
             id: 4,
             sname: "The Vampire Diries",
             imgscr: "https://images.justwatch.com/poster/8589251/s592",
-            title: "Netflix Original Series",
+            title: "Amazon Original Series",
             links: "https://www.netflix.com/in/title/70143860",
         },
         { 
